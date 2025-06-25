@@ -9,40 +9,6 @@ import CommissionReport from "./components/CommissionReport";
 import SalesList from "./components/SalesList";
 import CreateSale from "./components/CreateSale";
 
-//   <Container maxWidth="sm" sx={{ mt: 5 }}>
-//     <Typography variant="h4" gutterBottom>
-//       BeSpoked Bikes - Dashboard
-//     </Typography>
-//     <List>
-//       <ListItem disablePadding>
-//         <ListItemButton component={Link} to="/products">
-//           <ListItemText primary="Product List" />
-//         </ListItemButton>
-//       </ListItem>
-//       <ListItem disablePadding>
-//         <ListItemButton component={Link} to="/customers">
-//           <ListItemText primary="Customer List" />
-//         </ListItemButton>
-//       </ListItem>
-//       <ListItem disablePadding>
-//         <ListItemButton component={Link} to="/salespersons">
-//           <ListItemText primary="Salesperson List" />
-//         </ListItemButton>
-//       </ListItem>
-//       <ListItem disablePadding>
-//         <ListItemButton component={Link} to="/commissions">
-//           <ListItemText primary="Quarterly Commission Report" />
-//         </ListItemButton>
-//       </ListItem>
-//       <ListItem disablePadding>
-//         <ListItemButton component={Link} to="/sales">
-//           <ListItemText primary="Sales List" />
-//         </ListItemButton>
-//       </ListItem>
-//     </List>
-//   </Container>
-// );
-
 const App: React.FC = () => {
   return (
     <Router>
