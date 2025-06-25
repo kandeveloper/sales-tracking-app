@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button, Typography, Stack } from "@mui/material";
 import { Link } from "react-router-dom";
+import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
 
 const LandingPage: React.FC = () => {
   return (
@@ -11,10 +12,17 @@ const LandingPage: React.FC = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         padding: 4,
       }}
     >
+      <DirectionsBikeIcon
+        sx={{
+          fontSize: 100,
+          color: "primary.main",
+          mb: 2,
+        }}
+      />
       <Typography variant="h4" gutterBottom fontWeight={600}>
         BeSpoked Bikes Dashboard
       </Typography>
