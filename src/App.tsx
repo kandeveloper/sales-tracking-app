@@ -1,26 +1,62 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function App() {
+import LandingPage from "./components/LandingPage";
+import ProductList from "./components/ProductList";
+import CustomerList from "./components/CustomerList";
+import SalespersonList from "./components/SalesPersonList";
+import CommissionReport from "./components/CommissionReport";
+import SalesList from "./components/SalesList"; // Assuming you have this component
+import CreateSale from "./components/CreateSale";
+
+//   <Container maxWidth="sm" sx={{ mt: 5 }}>
+//     <Typography variant="h4" gutterBottom>
+//       BeSpoked Bikes - Dashboard
+//     </Typography>
+//     <List>
+//       <ListItem disablePadding>
+//         <ListItemButton component={Link} to="/products">
+//           <ListItemText primary="Product List" />
+//         </ListItemButton>
+//       </ListItem>
+//       <ListItem disablePadding>
+//         <ListItemButton component={Link} to="/customers">
+//           <ListItemText primary="Customer List" />
+//         </ListItemButton>
+//       </ListItem>
+//       <ListItem disablePadding>
+//         <ListItemButton component={Link} to="/salespersons">
+//           <ListItemText primary="Salesperson List" />
+//         </ListItemButton>
+//       </ListItem>
+//       <ListItem disablePadding>
+//         <ListItemButton component={Link} to="/commissions">
+//           <ListItemText primary="Quarterly Commission Report" />
+//         </ListItemButton>
+//       </ListItem>
+//       <ListItem disablePadding>
+//         <ListItemButton component={Link} to="/sales">
+//           <ListItemText primary="Sales List" />
+//         </ListItemButton>
+//       </ListItem>
+//     </List>
+//   </Container>
+// );
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/products" element={<ProductList />} />
+        <Route path="/customers" element={<CustomerList />} />
+        <Route path="/salespersons" element={<SalespersonList />} />
+        <Route path="/commissions" element={<CommissionReport />} />
+        <Route path="/sales" element={<SalesList />} />
+        <Route path="/createsale" element={<CreateSale />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
