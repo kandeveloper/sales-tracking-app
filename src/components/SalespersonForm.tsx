@@ -35,27 +35,6 @@ const SalespersonForm: React.FC<Props> = ({
     setFormData({ ...formData, [name]: value });
   };
 
-  //   const handleSubmit = () => {
-  //     if (!formData) return;
-
-  //     // Optional: Add duplicate check here (you can fetch all, filter by name)
-
-  //     fetch(`/api/salespersons/${formData.id}`, {
-  //       method: "PUT",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify(formData),
-  //     })
-  //       .then((res) => {
-  //         if (!res.ok) throw new Error("Update failed");
-  //         onSave();
-  //         onClose();
-  //       })
-  //       .catch((err) => {
-  //         console.error("Error updating salesperson:", err);
-  //         alert("Update failed");
-  //       });
-  //   };
-
   const handleSubmit = async () => {
     if (!formData) return;
 

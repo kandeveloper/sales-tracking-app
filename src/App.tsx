@@ -6,7 +6,7 @@ import ProductList from "./components/ProductList";
 import CustomerList from "./components/CustomerList";
 import SalespersonList from "./components/SalesPersonList";
 import CommissionReport from "./components/CommissionReport";
-import SalesList from "./components/SalesList"; // Assuming you have this component
+import SalesList from "./components/SalesList";
 import CreateSale from "./components/CreateSale";
 
 //   <Container maxWidth="sm" sx={{ mt: 5 }}>
