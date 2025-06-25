@@ -38,6 +38,9 @@ const LandingPage: React.FC = () => {
         >
           Salesperson List
         </Button>
+        <Button component={Link} to="/createsale" variant="contained" fullWidth>
+          Create Sale
+        </Button>
         <Button component={Link} to="/sales" variant="contained" fullWidth>
           Sales List
         </Button>
@@ -49,9 +52,6 @@ const LandingPage: React.FC = () => {
           fullWidth
         >
           Commission Report
-        </Button>
-        <Button component={Link} to="/createsale" variant="contained" fullWidth>
-          Create Sale
         </Button>
       </Stack>
     </Box>
