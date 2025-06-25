@@ -21,6 +21,7 @@ const ProductList: React.FC = () => {
 
   const fetchProducts = () => {
     fetch("/api/products")
+      // fetch("http://localhost:4000/products") // using mock data
       .then((res) => res.json())
       .then((data: Product[]) => setProducts(data))
       .catch((err) => console.error(err));

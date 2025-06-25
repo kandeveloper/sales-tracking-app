@@ -27,6 +27,7 @@ const SalesList: React.FC = () => {
 
   const fetchSales = useCallback(() => {
     let url = "/api/sales";
+    // let url = "http://localhost:4000/sales"; // using mock data
     fetch(url)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch sales");

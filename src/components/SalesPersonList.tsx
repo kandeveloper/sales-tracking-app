@@ -22,6 +22,7 @@ const SalespersonList: React.FC = () => {
 
   const fetchSalespersons = () => {
     fetch("/api/salespersons")
+      // fetch("http://localhost:4000/salespersons") // using mock data
       .then((res) => res.json())
       .then((data: SalesPerson[]) => setSalespersons(data))
       .catch((err) => console.error(err));

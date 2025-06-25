@@ -18,6 +18,7 @@ const CustomerList: React.FC = () => {
 
   useEffect(() => {
     fetch("/api/customers")
+      // fetch("http://localhost:4000/customers") // using mock data
       .then((res) => res.json())
       .then((data: Customer[]) => setCustomers(data))
       .catch((err) => console.error("Failed to fetch customers:", err));

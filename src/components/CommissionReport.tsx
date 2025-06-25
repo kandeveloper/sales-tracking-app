@@ -47,6 +47,7 @@ const CommissionReport: React.FC = () => {
 
   useEffect(() => {
     fetch("/api/sales")
+      // fetch("http://localhost:4000/sales") // using mock data
       .then((res) => res.json())
       .then((data: Sale[]) => {
         setSales(data);
